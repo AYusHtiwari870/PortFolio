@@ -12,7 +12,7 @@ export default function Contact() {
     navigator.clipboard.writeText('sikhartiwari93@gmail.com')
     setEmailCopied(true)
     setTimeout(() => setEmailCopied(false), 2500)
-    
+
     // Try launching the mail client in the background
     window.location.assign('mailto:sikhartiwari93@gmail.com')
   }
@@ -27,7 +27,7 @@ export default function Contact() {
     try {
       // Get a free access key instantly at https://web3forms.com
       // Replace the placeholder below with your key to start receiving form messages directly in your email!
-      const accessKey = 'YOUR_WEB3FORMS_ACCESS_KEY_HERE'
+      const accessKey = 'bd125e48-6d7a-4597-8836-fb778e6a6561'
 
       if (accessKey === 'YOUR_WEB3FORMS_ACCESS_KEY_HERE') {
         // If no key is set yet, we simulate a successful send for testing purposes
@@ -66,10 +66,10 @@ export default function Contact() {
   }
 
   const contactLinks = [
-    { 
-      label: 'Email', 
-      value: emailCopied ? 'Copied to clipboard! 📋' : 'sikhartiwari93@gmail.com', 
-      href: 'mailto:sikhartiwari93@gmail.com', 
+    {
+      label: 'Email',
+      value: emailCopied ? 'Copied to clipboard! 📋' : 'sikhartiwari93@gmail.com',
+      href: 'mailto:sikhartiwari93@gmail.com',
       icon: '✉',
       onClick: handleEmailClick
     },
